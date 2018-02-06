@@ -9,7 +9,11 @@ class Transfer
   end
 
   def valid?
-    Bank_account == true
-    
+    Bank_account.valid? == true
+
+  end
+
+  def execute_transaction
+    self.status = "complete"
   end
 end

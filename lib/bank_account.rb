@@ -25,4 +25,9 @@ class BankAccount
       return true
     end
   end
+
+  def close_account
+    self.clear
+
+  end
 end

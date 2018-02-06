@@ -9,7 +9,7 @@ class BankAccount
   end
 
   def depost(amount)
-    x
+    @balance + amount = @balance
 
   end
 

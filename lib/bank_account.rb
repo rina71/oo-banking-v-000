@@ -6,6 +6,9 @@ class BankAccount
     @name = name
     @balance = 1000
     @status = "open"
+    if !@name == name
+      raise 'An error has occured'
+    end
   end
 
   def deposit(amount)

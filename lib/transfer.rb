@@ -36,7 +36,7 @@ class Transfer
   def reject_transfer
     if @sender.balance < @amount && self.status = "pending" && valid? == false
       self.status = "rejected"
-     puts "Transaction rejected. Please check your account balance."
+     return "Transaction rejected. Please check your account balance."
    end
   end
 end

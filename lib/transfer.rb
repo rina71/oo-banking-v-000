@@ -14,6 +14,7 @@ class Transfer
   end
 
   def execute_transaction
+    BankAccount.balance
     self.status = "complete"
   end
 end

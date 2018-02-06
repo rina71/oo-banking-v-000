@@ -16,11 +16,11 @@ class Transfer
 
   def execute_transaction
     # binding.pry
-    if @sender.balance > @amount || @sender.balance = @amount
+    if @sender.balance > @amount || @sender.valid? == true
       @sender.balance -= @amount
       @receiver.balance += @amount
     self.status = "complete"
-  elsif @sender.balance < @amount || @sender.valid? == false
+    elsif @sender.balance < @amount || @sender.valid? == false
     self.status = "rejected"
       return "Transaction rejected. Please check your account balance."
     end

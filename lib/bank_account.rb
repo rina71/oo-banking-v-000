@@ -8,13 +8,13 @@ class BankAccount
     @status = "open"
   end
 
-  def depost(amount)
+  def deposit(amount)
     @balance + amount = @balance
 
   end
 
   def display_balance
-    puts "Your balance is $#{@balance}."
+    return "Your balance is $#{@balance}."
 
   end
 end

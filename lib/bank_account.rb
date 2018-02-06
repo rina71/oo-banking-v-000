@@ -8,7 +8,7 @@ class BankAccount
     @balance = 1000
     @status = "open"
     if !@name == name
-
+      binding.pry
       raise 'An error has occured'
     end
   end

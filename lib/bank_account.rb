@@ -18,6 +18,11 @@ class BankAccount
 
   def display_balance
     return "Your balance is $#{@balance}."
+  end
 
+  def valid?
+    if self.balance > 0
+      return true
+    end
   end
 end

@@ -17,8 +17,8 @@ class Transfer
   def execute_transaction
     # binding.pry
     if @sender.balance > @amount || @sender.balance = @amount
-      @sender.balance - @amount = @sender.balance
-      @receiver.balance + @amount = @receiver.balance
+      @sender.balance -= @amount 
+      @receiver.balance += @amount 
     self.status = "complete"
   elsif @sender.balance < @amount
     self.status = "rejected"

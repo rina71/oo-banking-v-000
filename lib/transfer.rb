@@ -1,4 +1,5 @@
 class Transfer
+
   attr_accessor :name, :sender, :receiver, :amount, :status
 
   def initialize(sender, receiver, amount)
@@ -9,7 +10,7 @@ class Transfer
   end
 
   def valid?
-    BankAccount.valid? == true
+    @sender.valid? && @receiver.valid? == true
 
   end
 

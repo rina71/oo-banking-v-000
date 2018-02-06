@@ -1,3 +1,4 @@
+require 'pry'
 class BankAccount
 
   attr_accessor :name, :balance, :status
@@ -7,6 +8,7 @@ class BankAccount
     @balance = 1000
     @status = "open"
     if !@name == name
+
       raise 'An error has occured'
     end
   end

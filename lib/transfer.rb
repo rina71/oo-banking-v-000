@@ -15,6 +15,8 @@ class Transfer
 
   def execute_transaction
     binding.pry
+    @sender.balance - @amount
+    @receiver.balance + @amount
     BankAccount.balance
     self.status = "complete"
   end
